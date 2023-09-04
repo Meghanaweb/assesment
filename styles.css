@@ -1,0 +1,264 @@
+* {
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* nav css */
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: black;
+  display: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+.hamburger:focus {
+  outline: none;
+}
+nav {
+  float: right;
+}
+#hamburgericon {
+  margin: auto 0;
+  display: none;
+}
+#hamburgericon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.logo img {
+  padding: 10px 10px;
+  float: left;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+ul li:hover {
+  color: orange;
+}
+/* banner css */
+.bannerdiv {
+  position: relative;
+}
+.bannerdiv h2 {
+  position: absolute;
+  top: 200px;
+  left: 10px;
+  font-family: "Gill Sans", sans-serif;
+  letter-spacing: 2px;
+}
+/* arrow 1 */
+.arrow {
+  margin-top: 70px;
+}
+.arrow img {
+  float: left;
+  margin: 0px 20px;
+}
+.arrow h2 {
+  color: #0c356a;
+  font-size: 30px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 20px;
+  color: #0c356a;
+}
+/* pink jars */
+
+.jars {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.jarimg::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.jars div {
+  width: 300px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.jars h4 {
+  padding: 0px 0px 0px 80px;
+  margin: 10px 0px 10px 10px;
+}
+.jars pre {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0px 0px 0px 10px;
+
+  color: #0c356a;
+  font-family: "Gill Sans", sans-serif;
+}
+h4 {
+  color: #b81c1c;
+  font-weight: 700px;
+  font-family: "Gill Sans", sans-serif;
+}
+
+/* floating right */
+.rightdiv {
+  display: flex;
+  padding-top: 0px;
+}
+
+.content ul li {
+  font-weight: 700;
+  margin: 0px 20px;
+  color: #0c356a;
+}
+.content h4 {
+  margin: 5px 0 0 20px;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.floatingimgright {
+  margin-top: 20px;
+}
+/* float image left */
+.leftdiv {
+  display: flex;
+}
+.floatingimgleft {
+  margin-top: 55px;
+}
+.content2 ul li {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 5px;
+  color: #0c356a;
+}
+#content2 h4 {
+  margin: 40px 0 0 20px;
+  font-family: "Gill Sans", sans-serif;
+}
+
+/* footer css */
+.horizontal {
+  border: 2px solid #b81c1c;
+}
+#footer ul li {
+  display: inline-block;
+  padding: 0px 10px;
+
+  font-family: sans-serif;
+  color: #0c356a;
+}
+.footer {
+  display: inline;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #0c356a;
+}
+@media screen and (min-width: 320px) and (max-width: 1920px) {
+  nav ul li {
+    font-size: 15px;
+  }
+  #footer ul li {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .jars {
+    width: 100%;
+  }
+  nav ul li {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    margin-top: 15px;
+  }
+  .logo img {
+    display: flex;
+    flex-direction: row;
+  }
+  .bannerdiv {
+    position: relative;
+  }
+  .bannerdiv h2 {
+    position: absolute;
+    top: 120px;
+    left: 10px;
+    font-family: "Gill Sans", sans-serif;
+  }
+  .arrow {
+    margin-top: 20px;
+  }
+  .arrow img {
+    float: left;
+    margin: 0px 20px;
+  }
+  .arrow h2 {
+    color: #0c356a;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #0c356a;
+  }
+
+  .jars div {
+    margin-right: 0px;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .rightdiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .content ul li {
+    font-weight: 700;
+    color: #0c356a;
+  }
+  .leftdiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .floatingimgleft {
+    width: 100%;
+    height: 400px;
+    background-image: url("images/Jar.jpg");
+    background-size: 100% 100%;
+  }
+  .floatingimgright {
+    width: 100%;
+    height: 400px;
+    background-image: url("images/carring.jpg");
+    background-size: 100% 100%;
+  }
+
+  #footer ul li {
+    display: inline;
+    font-size: 5px;
+  }
+}
+
+
